@@ -1,0 +1,27 @@
+<html>  <head>   <meta charset='UTF-8'>     <title>Mail Congress</title>   <style>          body { 	width: 6.25in; 	height: 4.25in; 	margin: 0; 	    }          #safe-area {       position: absolute;       width: 5.875in;       height: 3.875in;       left: 0.4875in;       top: 0.075in;     }          #ink-free {       position: absolute;       width: 3in;       height: 2.7in;       left: 3in;       bottom: 0.3in;       font-size: 12px;       padding-left: 20px;      }          #stamp{     top: -0.5in;     height: 85px;     width: 85px;     position: absolute;     right: 0.1in;     }          .text {       margin: 0px;       width: 3in;       height: 100%;       font-weight: 400;       font-size: 12px;       color: black;       border-right: 2px solid #000;     }     #returnAddress{      position:absolute;   }          #address{       	font-weight: bold;    		font-size: 16px;    		position: absolute;    		bottom: 50px;     }          .salutation {       margin-left: 20px;   </style> </head>  <body>   <div id='safe-area'><div class='text'>
+      Dear {{fullTitle}}, <br> <br> {{message1}}{{message2}} <br><br>
+      <div class='salutation'>
+        Sincerely, <br> {{userName}}
+      </div>
+      <div id='ink-free'>
+      	<div id='returnAddress'>
+			{{Name}}<br>
+			{{Address1}} {{Address2}}<br>
+			{{City}}, {{State}}, {{Zip}}
+      	</div>
+      	<div id='stamp'> 	
+	      	<img src='img/stamp.png'>
+    	</div>
+    	<div id='address'>
+    		{{Name}}<br>
+			{{Address1}} {{Address2}}<br>
+			{{City}}, {{State}}, {{Zip}}
+		</div>
+        <!-- Do not place any artwork or text in the ink free area. Address and postage will be automatically printed here. Delete this div before submitting your postcard! -->
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
